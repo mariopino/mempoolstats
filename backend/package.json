@@ -7,7 +7,8 @@
     "start": "tsc && node built/index.js",
     "tsc": "tsc",
     "docker:run": "docker-compose -p backend -f docker-compose.yml up -d",
-    "docker:build": "docker-compose -p backend -f docker-compose.yml build --no-cache"
+    "docker:build": "docker-compose -p backend -f docker-compose.yml build --no-cache",
+    "docker:clean": "bash scripts/clean-dockers.sh"
   },
   "author": "",
   "license": "ISC",
