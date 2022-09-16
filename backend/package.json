@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node built/index.js",
+    "tsc": "tsc",
+    "docker:run": "docker-compose -p backend -f docker-compose.yml up -d",
+    "docker:build": "docker-compose -p backend -f docker-compose.yml build --no-cache"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^1.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
